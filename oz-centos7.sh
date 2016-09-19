@@ -8,10 +8,8 @@ cp ~/.ssh/id_rsa.pub /data/www/repo/init-instance/
 OZ_HOME="/data/oz/templates"
 cd $OZ_HOME
 start_time=`date +%s`
-echo -e "\033[37;32;1m oz-install start:$start_time ,about need 350s install,please waitting...\033[0m"
+echo -e "\033[37;32;1m oz-install start:$start_time ,about need 500s install,please waitting...\033[0m"
 oz-install -p -u -d2 -t 2500 -x centos7.xml -a centos7.ks centos7.tdl
-done_time=`date +%s`
-echo -e "\033[37;32;1m oz-install done:$done_time,use time:`echo $done_time-$start_time|bc` \033[0m"
 #cd images
 #guestmount -a  centos7.qcow2 -i --rw temp/
 #ip=`cat temp/root/if.log |grep "inet addr"|grep -v "127.0" |awk '{print $2}'|awk -F":" '{print $2}'`
@@ -110,3 +108,6 @@ rm $OZ_HOME/centos7.xml
 echo -e "\033[37;33;1m Wonderfull, everything has Done. \033[0m\n"
 echo -e "\033[37;34;1m Get Image:http://mirrors.rmz.gomo.com/images/centos7-latest.qcow2. \033[0m"
 echo -e "\033[37;34;1m Image in:/data/www/repo/images/centos7-latest.qcow2. \033[0m"
+
+done_time=`date +%s`
+echo -e "\033[37;32;1m oz-install done:$done_time,use time:`echo $done_time-$start_time|bc` \033[0m"

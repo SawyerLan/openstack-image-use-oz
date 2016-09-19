@@ -1,1 +1,0 @@
-/data/www/repo/init-instance/oz-centos7-config.sh
