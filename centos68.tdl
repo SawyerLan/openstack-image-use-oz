@@ -1,0 +1,15 @@
+<template>
+  <name>centos68</name>
+  <os>
+    <name>CentOS-6</name>
+    <version>8</version>
+    <arch>x86_64</arch>
+    <install type='iso'>
+      <iso>file:///data/www/repo/iso/CentOS-6.8-x86_64-minimal.iso</iso>
+    </install>
+  </os>
+  <description>My CentOS 6.8 x86_64 template</description>
+  <disk>
+    <size>9</size>
+  </disk>
+</template>

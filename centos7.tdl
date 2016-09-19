@@ -1,0 +1,15 @@
+<template>
+  <name>centos7</name>
+  <os>
+    <name>CentOS-7</name>
+    <version>2</version>
+    <arch>x86_64</arch>
+    <install type='iso'>
+      <iso>file:///data/www/repo/iso/CentOS-7-x86_64-Minimal-1511.iso</iso>
+    </install>
+  </os>
+  <description>My CentOS 7 x86_64 template</description>
+  <disk>
+    <size>9</size>
+  </disk>
+</template>
